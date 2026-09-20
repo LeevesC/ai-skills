@@ -2,17 +2,43 @@
 
 Edit this whenever your stack or comfort level changes — Claude will also update it after sessions where you pick up something new. This is what lets Claude skip "what are you working with?" every time.
 
+Proficiency labels used below match the resume's own scale, so descriptions stay consistent everywhere: Strong (used extensively, can discuss in depth) / Working (used in real work or study, functional) / Foundational (studied or lightly used, needs ramp-up) / AI-assisted (can execute with AI as co-pilot, not independent yet).
+
 ## Background
-- Comes from systems analysis / product management, not a CS background — comfortable with logical/structured thinking, less exposure to CS theory (e.g. Big-O, memory model internals) unless it's been explicitly covered.
-- Currently working toward a Data Engineering career transition.
+
+- Bachelor of Computer Science (2010–2014, China) — foundation in C and software engineering principles.
+- Master of Data Science, University of Adelaide (Jan 2023 – Jan 2025).
+- Career path: Senior Product Manager in Chinese fintech (Transsnet, YongYou) — wrote API contracts, UML/sequence diagrams, and DB schemas directly, which is Systems-Analyst-equivalent work under a PM title there; Automation Engineer at Rise High Financial Solutions (Australia, Python + Google Apps Script + Zapier).
+- Comes in with real CS fundamentals and strong systems/requirements thinking (not a total-beginner profile) — the gap is more "hands-on coding practice" than "how do systems work."
+- Prefers conceptual explanation before syntax, guided/Socratic practice over being handed the answer, and diagrams to anchor abstract ideas.
 
 ## Comfortable with
-- SQL: correlated subqueries, window functions (ROW_NUMBER, RANK, LAG, LEAD), ROLLUP/CUBE, COALESCE, full-text search in Postgres, INTERVAL arithmetic, string functions.
-- Web development: has built projects moving from HTML/CSS into JS and frameworks.
-- General note: prefers conceptual explanation before syntax, prefers guided/Socratic practice over being handed the answer, and finds diagrams helpful for anchoring abstract ideas.
 
-## Currently learning / shaky on
-- (fill in as it comes up — e.g. "JS async patterns", "data pipeline tools")
+- SQL — Working. Correlated subqueries, window functions (ROW_NUMBER, RANK, LAG, LEAD), ROLLUP/CUBE, COALESCE, full-text search in Postgres, INTERVAL arithmetic, string functions. Grounded in real DB schema design work at Transsnet plus ongoing practice.
+- JavaScript (vanilla) — Working. Completed learnjavascript.online end to end.
+- HTML/CSS — Working. Reinforced through bootcamp coursework on top of Master's exposure.
+- Express.js — Foundational. Completed through bootcamp coursework.
+- React.js — Foundational. Completed through bootcamp coursework.
+- Systems thinking, requirements gathering, API contract design, UML/sequence diagrams, DB schema design — Strong. Real evidence: full product lifecycle ownership at Transsnet (apps, payment middleware, accounting system, admin dashboards).
+
+## Currently learning / in progress
+
+- React — Foundational, moving to Working. "The Ultimate React Course" (Udemy), ~60% complete.
+- Node.js / Express / MongoDB — Foundational, moving to Working. Dedicated bootcamp, ~50% complete.
+
+- Full-stack fundamentals — in progress. "The Complete Web Development Bootcamp" (Udemy), ~80% complete — likely overlaps with the JS/React/Node courses above, so don't double-count depth, just breadth of exposure.
+
+- Python — Foundational / AI-assisted. Used pandas and basic ML in Master's coursework; rusty since graduating, functional with AI as a co-pilot rather than independently.
 
 ## Explicitly not yet covered
-- (things you know you haven't touched — helps Claude know not to assume, e.g. "no formal algorithms/data structures background yet")
+
+- Cloud platforms (AWS/Azure/GCP) — no hands-on experience; relevant to the longer-term Data Engineering interest, intentionally parked for now.
+
+- Data engineering tooling: Spark, Airflow, dbt — no experience yet.
+
+- Formal algorithms/data structures beyond what the CS Bachelor's covered — don't assume depth here without checking.
+
+## When teaching or quizzing
+
+- Calibrate to the level stated above, not up — honesty is useful here: don't assume "Strong" on anything marked Working/Foundational/AI-assisted just because the surrounding systems knowledge is strong.
+- Systems-level concepts (API design, data flow, schema design) can go deeper/faster than raw coding syntax — that's the actual strength here, not a gap.
