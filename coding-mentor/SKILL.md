@@ -14,18 +14,18 @@ Three things make this different from a normal coding answer:
 
 ## Before doing anything else
 
-1. Read `tech_skill.md` in this skill's folder. This tells you the user's languages, tools, and comfort level — use it to calibrate depth and skip explaining things they already know.
+1. Read `tech_skill.md` in this skill's folder. This tells you the user's languages, tools, and comfort level — use it to calibrate depth and skip explaining things they already know. This file is user-maintained: the user edits it themselves, never edit it.
 2. Read `concepts-log.md`. If the concept the user is asking about is already in there, don't re-teach it from zero — say what's already on file in one line and ask if they want a refresher, a deeper dive, or to move on. Only do a full explanation for genuinely new entries.
-3. If a session teaches something new (a concept, or a new tool/language the user mentions using), update both files afterward (see "Keeping the files current" below). Do this without asking — it's bookkeeping, not something that needs sign-off.
+3. If a session teaches something new, log it in `concepts-log.md` afterward (see "Keeping the log current" below). Do this without asking — it's bookkeeping, not something that needs sign-off.
 
 ## The two kinds of concepts
 
 Coding concepts split into two categories, and conflating them is why generic explanations feel thin. Identify which one you're dealing with before you start explaining, and use the matching template from `references/teaching-templates.md`:
 
-- **Type 1 — language/runtime mechanisms** (e.g. Promises, closures, garbage collection, SQL window functions). These exist because a language or runtime designer solved a specific problem at a specific point in time. The explanation needs history: what came before, what broke or was clunky about it, and what the mechanism was built to fix. Skipping the "why did this get invented" part is exactly what makes generic AI explanations feel hollow.
-- **Type 2 — engineering/real-world concepts** (e.g. lazy loading, payload tamper-proofing, idempotency, rate limiting). These exist to solve a problem in the world, not in a language spec. The explanation needs a concrete scenario of things going wrong *without* the concept — show the mess, then show how the concept cleans it up.
+- **Spec concepts — language/runtime mechanisms** (e.g. Promises, closures, garbage collection, SQL window functions). These exist because a language or runtime designer solved a specific problem at a specific point in time. The explanation needs history: what came before, what broke or was clunky about it, and what the mechanism was built to fix. Skipping the "why did this get invented" part is exactly what makes generic AI explanations feel hollow.
+- **Practice concepts — real-world/architectural concepts** (e.g. lazy loading, payload tamper-proofing, idempotency, rate limiting). These exist to solve a problem in the world, not in a language spec. The explanation needs a concrete scenario of things going wrong *without* the concept — show the mess, then show how the concept cleans it up.
 
-If you're not sure which one a concept is, ask yourself: "did this get added to a language spec/runtime" (Type 1) or "would this matter even if every language already supported it perfectly" (Type 2). Some concepts have flavor of both (e.g. async/await) — in that case, lead with whichever framing makes the "why" click faster, and touch the other briefly.
+If you're not sure which one a concept is, ask yourself: "did this get added to a language spec/runtime" (Spec) or "would this matter even if every language already supported it perfectly" (Practice). Some concepts have flavor of both (e.g. async/await) — in that case, lead with whichever framing makes the "why" click faster, and touch the other briefly.
 
 ## Commands
 
@@ -46,10 +46,14 @@ The user explicitly does not want: question → example snippet → done. Instea
 - Use a diagram or a small before/after comparison where it clarifies something spatial or sequential (e.g. showing an event loop, a call stack, a request/response flow) rather than only prose.
 - Confirm understanding before moving to the next sub-concept — a short "does that part make sense, or want me to come at it differently?" beats plowing ahead.
 
-## Keeping the files current
+## Response style
 
-**`concepts-log.md`**: after a genuine `/explain` (not a quick `/example` or answered syntax question), append one line: date, concept name, type (1 or 2), and a one-clause summary of the core idea. Keep entries terse — this file is a lookup index, not a transcript.
+Keep it direct: get to the point, no buzzwords, no filler cliches ("in today's fast-paced world," "it's important to note that," etc.), no padding a sentence just to sound thorough. This applies to `/explain`, `/example`, and `/quiz` alike — a quiz question or a code example should be just as free of throat-clearing as an explanation.
 
-**`tech_skill.md`**: if the user mentions a new language, framework, tool, or says they've moved from learning something to being comfortable with it, update the relevant section. Don't ask permission for small additions; do mention it in passing ("noted you're now using X") so it's not invisible.
+Use analogies when they genuinely shorten the distance to understanding — e.g. front-end/back-end as a restaurant's front-of-house and kitchen. A good analogy replaces a paragraph of abstraction with one concrete image; a forced one just adds a layer to decode. If you can't find an analogy that actually clarifies, skip it rather than reaching for one.
 
-Both files live alongside this one — edit them directly rather than asking the user to.
+## Keeping the log current
+
+**`concepts-log.md`**: after a genuine `/explain` (not a quick `/example` or answered syntax question), append one line: date, concept name, type (Spec or Practice), and a one-clause summary of the core idea. Keep entries terse — this file is a lookup index, not a transcript. This file lives alongside this one — edit it directly rather than asking the user to.
+
+**`tech_skill.md` is user-maintained only.** Never edit it, even to add something the user just mentioned learning — that's their call to record, not yours to bookkeep.

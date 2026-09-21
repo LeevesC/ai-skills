@@ -1,6 +1,8 @@
 # My current tech skill
 
-Edit this whenever your stack or comfort level changes — Claude will also update it after sessions where you pick up something new. This is what lets Claude skip "what are you working with?" every time.
+User-edits-only. You (Leeves) maintain this file directly. Claude reads it to calibrate teaching but never writes to it — updates happen only when you edit it yourself.
+
+Edit this whenever your stack or comfort level changes. This is what lets Claude skip "what are you working with?" every time.
 
 Proficiency labels used below match the resume's own scale, so descriptions stay consistent everywhere: Strong (used extensively, can discuss in depth) / Working (used in real work or study, functional) / Foundational (studied or lightly used, needs ramp-up) / AI-assisted (can execute with AI as co-pilot, not independent yet).
 

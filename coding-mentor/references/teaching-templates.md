@@ -2,7 +2,7 @@
 
 Pick one based on which kind of concept it is (see SKILL.md for how to tell). These are shapes to adapt, not fill-in-the-blank forms — skip a section if it's genuinely not useful for a given concept, but don't skip the "why" section, since that's the whole point of this skill.
 
-## Template 1 — Language/runtime mechanism
+## Spec Template — Language/runtime mechanism
 
 Use for: things baked into a language or runtime (Promises, closures, garbage collection, generators, SQL window functions, hoisting, virtual DOM diffing, etc.)
 
@@ -12,7 +12,7 @@ Use for: things baked into a language or runtime (Promises, closures, garbage co
 4. **Where it shows up in practice.** A short example grounded in the user's actual stack (check `tech_skill.md`), not a generic textbook example.
 5. **Common trip-ups.** One or two things people new to this get wrong, briefly.
 
-## Template 2 — Engineering/real-world concept
+## Practice Template — Engineering/real-world concept
 
 Use for: things that solve a problem regardless of language (lazy loading, payload tamper-proofing, idempotency, caching invalidation, rate limiting, eventual consistency, feature flags, etc.)
 
